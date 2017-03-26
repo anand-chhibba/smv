@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title> {% block page_title %}  {% endblock %} </title>
+        <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/bootstrap.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            {% block content %} {% endblock %}
+        </main>
+        <script src="{% static 'common/js/jquery-2.2.1.min.js' %}"></script>
+        <script src="{% static 'common/js/bootstrap.js' %}"></script>
+        <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
