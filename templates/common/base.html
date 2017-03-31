@@ -5,13 +5,138 @@
         <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/bootstrap.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
     </head>
     <body>
-        <main class="container">
-            {% block content %} {% endblock %}
-        </main>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Full Page Image Background Carousel Header -->
+        <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                    <div class="carousel-caption">
+                        <h2>Caption 1</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                    <div class="carousel-caption">
+                        <h2>Caption 2</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                    <div class="carousel-caption">
+                        <h2>Caption 3</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </header>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Full Slider by Start Bootstrap</h1>
+                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+            </div>
+        </div>
+
+        <hr>
+        </div>
+        <!-- /.container -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>About Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Services Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Contact Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
         <script src="{% static 'common/js/jquery-2.2.1.min.js' %}"></script>
         <script src="{% static 'common/js/bootstrap.js' %}"></script>
         <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'common/js/scrolling-nav.js' %}"></script>
     </body>
 </html>
