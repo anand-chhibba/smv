@@ -1,3 +1,308 @@
 body{
 	background-color: 'red';
 }
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                    SOCIAL LINK SECTION
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.do-social-link-section{
+    background-color: #373737;
+    overflow: hidden;
+}
+
+.do-social-link-section ul{}
+
+.do-social-link-section a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #c0c0c0;
+    line-height: 30px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 50px 0;
+    border-right: 1px solid #333333;
+    -webkit-transition: all .35s;
+       -moz-transition: all .35s;
+        -ms-transition: all .35s;
+         -o-transition: all .35s;
+            transition: all .35s;
+}
+
+.do-social-link-section a:first-child{
+    border-left: 1px solid #333333;   
+}
+
+.do-social-link-section a span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #575757;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transition: all .35s;
+       -moz-transition: all .35s;
+        -ms-transition: all .35s;
+         -o-transition: all .35s;
+            transition: all .35s;
+}
+
+.do-social-link-section a span i{
+    font-size: 16px;
+    color: #575757;
+    line-height: 29px;
+    padding-left: 5px;
+    -webkit-transition: all .35s;
+       -moz-transition: all .35s;
+        -ms-transition: all .35s;
+         -o-transition: all .35s;
+            transition: all .35s;
+}
+
+.do-social-link-section a:hover{
+    color: #ffffff;
+}
+
+.do-social-link-section a:hover span{
+    border-color: #ffffff;
+}
+
+.do-social-link-section a:hover span i{
+    color: #ffffff
+}
+
+
+.do-social-link-section a.do-facebook:hover{
+    background-color: #3b5998;
+}
+
+
+.do-social-link-section a.do-twitter:hover{
+    background-color: #00aced;
+}
+
+
+
+.do-social-link-section a.do-google:hover{
+    background-color:#db4437;
+}
+.do-social-link-section a.do-instagram:hover{
+  background:linear-gradient(-135deg,#1400c8,#b900b4,#f50000);
+}
+.do-social-link-section a.do-youtube:hover{
+    background-color:#cc181e;
+}
+
+.outer_product_box_div{
+    display: inline-block;
+    margin: 30px;
+    justify-content: space-around;
+}
+    .product_circle{
+        height: 230px;
+    width: 230px;
+    background-color: 9ed6ff;
+    border-radius: 174px;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+
+    }
+    .circle_img{
+        
+        height: 200px;
+    width: 200px;
+    border: 2px;
+    border-radius: 158px;
+    border-style: solid;
+    margin: auto;
+        
+
+    }
+    .achievment_disc{
+         border-radius: 10px;
+        background-color: 2FA8A6;
+        width: 430px;
+        height: 250px;
+        
+        justify-content: center;
+        align-items: center;
+    
+
+    }
+        .empty_div{
+         border-radius: 10px;
+        background-color: 2FA8A6;
+        width: 430px;
+        height: 250px;
+        
+        justify-content: center;
+        align-items: center;
+    
+
+    }
+    .achievement.block {
+    display: flex;
+}
+    .circle_img:hover{
+        
+        animation-name: rotatebox;
+        animation-iteration-count: 1; 
+        animation-duration: 0.7s;
+        animation-timing-function: ease-in-out;
+
+
+    }
+    .product_circle:hover + .product_disc{
+        background-color: 9ed6ff;
+    }
+    .product_circle:hover{
+        background-color: 2FA8A6;
+    }
+    @keyframes rotatebox{
+
+        from{
+            transform:rotate(0deg);
+        }       
+        to{
+            transform:rotate(360deg);
+        }                       
+
+    }
+    #About{ 
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+#About h2{
+    padding-top: 2%;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 40;
+}
+#About header p{
+    text-align: center;
+    padding-top: 1%;
+    color: grey;
+    font-family: "Droid Serif";
+    font-style: italic;
+    font-size: 16px;
+}
+#About main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8%;
+}
+#About main > div {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+#About main > div div {
+    width: 380px;
+}
+#About main > div {
+    text-align: right;
+}
+#About main > div:nth-child(2n) {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+#About h4{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+}
+#About p{
+    font-family: "Roboto Slab";
+    font-size: 14px;
+}
+#About img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 6px solid rgba(128,128,128,0.24);
+}
+#gol-img {
+    text-align: center;
+    padding: 3%;
+    padding-top: 0;
+}
+#line{ 
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    z-index: -5;
+    width: 2px;
+    height: 70%;
+    background-color: rgba(128,128,128,0.24);
+}
+#About button{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    background-color: rgba(253, 219, 39, 0.97);
+    color: white;
+}
+
+#gol-hide {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    #line {
+        display: none;
+    }
+    #About main > div {
+        text-align: center !important;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse !important;
+    }
+    #empty{
+        display: none;
+    }
+    #content {
+        height: 0px;
+        padding-top: 2%;
+        overflow: hidden;
+        display: block;
+        transition: height 2s ease-in-out;
+    }
+    #About div:target div:first-child{
+        height: 143px;
+    }
+    #About div:target #gol-img{
+        display: none;
+    }
+    #About div:target #gol-hide{
+        display: block;
+    }
+}
+#Services img, #About img, #AmazingTeam h4,#AmazingTeam img{
+    transition: all 0.7s;
+}
+#Services img:hover, #About img:hover {
+    transform:scale(1.1) rotate(360deg);
+}

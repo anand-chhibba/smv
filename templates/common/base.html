@@ -3,10 +3,20 @@
     <head>
         <title> {% block page_title %}  {% endblock %} </title>
         <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
+       
+        <link href="{% static 'common/font-awesome-4.7.0/css/font-awesome.css' %}" rel="stylesheet">
+
         <link href="{% static 'common/css/bootstrap.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -28,11 +38,21 @@
                         <li class="hidden">
                             <a class="page-scroll" href="#page-top"></a>
                         </li>
+                  
                         <li>
                             <a class="page-scroll" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#services">Services</a>
+                            <a class="page-scroll" href="#achievements">Achievments</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#our_ride">Our Ride</a>
+                        </li>
+                          <li>
+                            <a class="page-scroll" href="#crew">Crew</a>
+                        </li>
+                          <li>
+                            <a class="page-scroll" href="#partners">Partners</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#contact">Contact</a>
@@ -93,7 +113,7 @@
 
         <hr>
         </div>
-        <!-- /.container -->
+        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
                 <div class="row">
@@ -104,26 +124,118 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
+       <!--Achievemnets Section -->
+        <section id="achievements" class="services-section">
+  
+               
+
+             
+
+        </section>
+
+        <!-- Our Ride Section -->
+        <section id="our_ride" class="contact-section">
+            <div class="container">
+                
+            </div>
+        </section>
+         <!-- Crew  Section -->
+        <section id="crew" class="services-section">
+            <div class="container">
+                
+                </div>
+            </div>
+        </section>
+           <!-- Partners  Section -->
+        <section id="partners" class="contact-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Services Section</h1>
+                        <h1> Partners Section</h1>
                     </div>
                 </div>
             </div>
         </section>
+               <!--Contact  Section -->
+        <section id="contact" class="services-section">
+         <section class="do-social-link-section">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="do-facebook">
+                    <span>
+                        <i class="fa fa-facebook"></i>
+                    </span>
+                    FACEBOOK
+                </a>
+            
+                <a href="#" class="do-twitter">
+                    <span>
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                    TWITTER
+                </a>
+           
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+            <a href="#" class="do-google" target="_blank">
+                    <span>
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </span>
+                       Google
+</a>
+            <a href="#" class="do-instagram" target="_blank">
+                    <span>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </span>
+                    Instagram
+</a>
+
+ <a href="#" class="do-youtube" target="_blank">
+                    <span>
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </span>
+                       Youtube
+</a>
+            </div>
+        </div>
+    </section>
+
             <div class="container">
+            <h1>Contact Section</h1>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Contact Section</h1>
+
+                    <div class="col-lg-6">
+                        
+          <!-- GOOGLEMAP -->            
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat:28.7501, lng: 77.1177};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5uoryxTrl5Oz5A9uiUqhS6ciJH-so604&callback=initMap">
+    </script>
                     </div>
+
+                      <!-- CONTACT INFO -->
+                          <div class="col-lg-6" id = "contact_address_info"><h5>Contact Us</h5>
+      <div><i class="fa fa-phone icon-2x" style="color:green; "></i> +919953-071-448</div>
+      <div><i class="fa fa-map-marker icon-2x" style="color:orange;"></i> D-5,A Vijay Nagar Single Storey Delhi 110009</div>
+      <div><i class="fa fa-envelope-o icon-2x" style="color:yellow;"></i> aparnaenterprises2016@gmail.com</div>
+
+       
+      </div>
                 </div>
             </div>
+
         </section>
                 <!-- Footer -->
         <footer>
@@ -138,5 +250,59 @@
         <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
         <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
         <script src="{% static 'common/js/scrolling-nav.js' %}"></script>
+    
+  <section id="About">
+        <header>
+            <h2>Achievments</h2>
+            <p>Nasrum Minnallahi Wafatahun Qareeb.</p>
+        </header>
+        <main>
+            <div id="id1">
+                <div id="content">
+                    <h4>JUNE 2010</h4>
+                    <h4>Our Humble Beginnings</h4>
+                    <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+                </div>
+                <div id="gol-img"><a href="#id1"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
+                <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg"  %}"></a></div>
+                <div id="empty"></div>
+            </div>
+            <div id="id2">
+                <div id="content">
+                    <h4>JANUARY 2011 <br> Facing Startup Battles </h4>
+                    <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+                </div>
+                <div id="gol-img"><a href="#id2"><img src="{% static  "common/images/about-us-2.jpg" %}" alt="My image"/></a></div>
+                <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
+                <div id="empty"></div>
+            </div>
+            <div id="id3">
+                <div id="content">
+                    <h4>DECEMBER 2012 <br> Enter The Dark Days</h4>
+                    <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+                </div>
+                <div id="gol-img"><a href="#id3"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+                <div id="gol-hide"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+                <div id="empty"></div>
+            </div>
+            <div id="id4">
+                <div id="content">
+                    <h4>FEBRUARY 2014 <br> Our Triumph </h4>
+                    <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+                </div>
+                <div id="gol-img"><a href="#id4"><img src="{% static  "common/images/about-us-4.jpg" %}" alt="My image"/></a></div>
+                <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+                <div id="empty"></div>
+            </div>
+            <div id="but"><button>OUR <br>STORY<br> CONTINUES <br> ...</button></div>
+            <section id="line"></section>
+        </main>
+    </section>
+
+
+
+
+
+
     </body>
 </html>
