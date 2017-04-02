@@ -300,3 +300,9 @@ body{
         display: block;
     }
 }
+#Services img, #About img, #AmazingTeam h4,#AmazingTeam img{
+    transition: all 0.7s;
+}
+#Services img:hover, #About img:hover {
+    transform:scale(1.1) rotate(360deg);
+}
