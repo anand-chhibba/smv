@@ -1,7 +1,10 @@
 {% load staticfiles %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title> {% block page_title %}  {% endblock %} </title>
+           <link href= "{% static 'common/css/animate.css' %}"  rel="stylesheet" >
+        <link  href= "{% static 'common/css/demo.css' %}" rel="stylesheet" >
         <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
        
         <link href="{% static 'common/font-awesome-4.7.0/css/font-awesome.css' %}" rel="stylesheet">
@@ -10,6 +13,8 @@
         <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
+     
     <style>
        #map {
         width: 100%;
@@ -124,6 +129,7 @@
             </div>
         </section>
 
+
        <!--Achievemnets Section -->
         <section id="achievements" class="services-section">
 			<section id="About">
@@ -180,12 +186,7 @@
                 
             </div>
         </section>
-         <!-- Crew  Section -->
-        <section id="crew" class="services-section">
-            <div class="container">
-                
-            </div>
-        </section>
+     
            <!-- Partners  Section -->
         <section id="partners" class="contact-section">
             <div class="container">
@@ -277,7 +278,10 @@
                 </div>
             </div>
 
+
+
         </section>
+
                 <!-- Footer -->
         <footer>
             <div class="row">
@@ -286,10 +290,100 @@
                 </div>
             </div>
         </footer>
+                    <!-- Crew  Section -->
+        <section id="crew" class="services-section">
+        <div class="container">
+<div id = "outer_box">
+    <div id ="disc_box"><button id ="click" onclick="myFunction()">click here</button>
+    fjkasdhflaksjdhfkasjbdfnaksjbckasjbndvsbdvs.bdkvzbv</div>
+
+<div id ="inner_box">
+            <div>faculty head</div>
+        <div class ="post" id =  "faculty_head" >
+            <img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/>
+            <div id ="faculty_disc">
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+        
+            </div>
+            <div id ="empty_div"> </div>
+        </div>
+
+        <div id ="team_members" class ="post" >
+        
+        <div class="col-lg-4">
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            </div>
+                <div class="col-lg-4">
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            </div>
+                <div class="col-lg-4">
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            </div>
+                <div class="col-lg-4">
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            </div>
+
+
+</div>
+
+</div>
+<div id = "lower_box"></div>
+
+
+</div>
+</div>
+<script>
+    function myFunction(){
+        var button = document.getElementById("click");
+         var inner_height = parseInt(document.getElementById('inner_box').offsetHeight);
+     console.log(document.getElementById("lower_box").style.top = "0px");
+     jQuery(document).ready(function() {
+    jQuery('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+        offset: 100    
+       });   
+});        
+    }
+</script>
+
+        </section>
+          <script src="{% static 'common/js/jquery.js' %}"></script>
+      
         <script src="{% static 'common/js/jquery-2.2.1.min.js' %}"></script>
+      
         <script src="{% static 'common/js/bootstrap.js' %}"></script>
         <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
         <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
         <script src="{% static 'common/js/scrolling-nav.js' %}"></script>
+          <script src=" {% static 'common/js/viewportchecker.js' %}"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
     </body>
 </html>

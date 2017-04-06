@@ -1,0 +1,120 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> {% block page_title %}  {% endblock %} </title>
+           <link href= "{% static 'common/css/animate.css' %}"  rel="stylesheet" >
+        <link  href= "{% static 'common/css/demo.css' %}" rel="stylesheet" >
+        <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
+       
+        <link href="{% static 'common/font-awesome-4.7.0/css/font-awesome.css' %}" rel="stylesheet">
+
+        <link href="{% static 'common/css/bootstrap.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
+        <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
+     
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+    </head>
+
+<body>
+
+
+
+
+<style >
+
+</style>
+<div class="container">
+<div id = "outer_box">
+	<div id ="disc_box"><button id ="click" onclick="myFunction()">click here</button>
+	fjkasdhflaksjdhfkasjbdfnaksjbckasjbndvsbdvs.bdkvzbv</div>
+
+<div id ="inner_box">
+			<div>faculty head</div>
+		<div class ="post" id =  "faculty_head" >
+			<img  id ="faculty_pic" src="aparna.jpeg">
+			<div id ="faculty_disc">
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+		
+			</div>
+			<div id ="empty_div"> </div>
+		</div>
+
+		<div id ="team_members" class ="post" >
+		
+		<div class="col-lg-4">
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh</div>
+						<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			</div>
+				<div class="col-lg-4">
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh</div>
+						<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			</div>
+				<div class="col-lg-4">
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh</div>
+						<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			</div>
+				<div class="col-lg-4">
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh</div>
+						<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			<div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+			</div>
+
+
+</div>
+
+</div>
+<div id = "lower_box"></div>
+
+
+</div>
+</div>
+<script>
+	function myFunction(){
+	 	var button = document.getElementById("click");
+	 	 var inner_height = parseInt(document.getElementById('inner_box').offsetHeight);
+	 console.log(document.getElementById("lower_box").style.top = "0px");
+	 jQuery(document).ready(function() {
+	jQuery('.post').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });   
+});        
+	}
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+ <script src=" {% static 'common/js/viewportchecker.js' %}"></script>
+
+</body>
+</html>
