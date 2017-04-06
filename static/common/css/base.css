@@ -306,3 +306,9 @@ body{
 #Services img:hover, #About img:hover {
     transform:scale(1.1) rotate(360deg);
 }
+#but{
+    transition: all 0.7s ease-in-out;
+}
+#but:hover {
+    transform: scale(1.2);
+}
