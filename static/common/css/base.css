@@ -320,13 +320,14 @@ body{
 
 
 .pane {
+        position: relative;
     margin-top:30px;
     height:400px; 
     width:400px; 
     overflow-x: hidden;
     overflow-y: hidden;
     white-space:nowrap;
-    position: relative;
+
 }
 
 .pane .item {
@@ -335,12 +336,14 @@ body{
     margin: 0 8px;
     background:white;
     display:inline-block;
-    *display:inline;
-    *zoom:1;
+
     vertical-align:top;
 
 }
 
+div#main_ride_box {
+    position: relative;
+}
 
 img.button_img {
     width: 250px;
@@ -350,20 +353,19 @@ img.ride-img {
     width: 308px;
     height: 500px;
 }
-#leftb {
-    position: relative;
-    top: -399px;
-    
+button#leftb {
+    position: absolute;
+    top: -3px;
 }
 button#rightb {
     position: absolute;
-    left: 80%;
-       top: 2722px;
+    top: 14px;
+    left: 86%;
 }
 
 
 .ride_button_class{
-    position: absolute;
+  
     opacity: 0.6;
     display: none;
 /* apply transision */
