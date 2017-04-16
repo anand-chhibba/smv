@@ -3,8 +3,7 @@
 <html lang="en">
     <head>
         <title> {% block page_title %}  {% endblock %} </title>
-           <link href= "{% static 'common/css/animate.css' %}"  rel="stylesheet" >
-        <link  href= "{% static 'common/css/demo.css' %}" rel="stylesheet" >
+
         <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
        
         <link href="{% static 'common/font-awesome-4.7.0/css/font-awesome.css' %}" rel="stylesheet">
@@ -13,8 +12,13 @@
         <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
-     
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
+                   <link href= "{% static 'common/css/animate.css' %}"  rel="stylesheet" >
+        <link  href= "{% static 'common/css/demo.css' %}" rel="stylesheet" >
+        
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'common/css/bootstrap-lightbox.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'common/css/lightbox.css' %}" >
     <style>
        #map {
         width: 100%;
@@ -22,6 +26,7 @@
         background-color: grey;
       }
     </style>
+
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -62,7 +67,7 @@
                         <li>
                             <a class="page-scroll" href="#contact">Contact</a>
                         </li>
-                    </ul>
+                    <ul>
                 </div>
             </div>
         </nav>
@@ -177,15 +182,37 @@
 				</div>
 				 <div ><button id ="but">OUR <br>STORY<br> CONTINUES <br> ...</button></div>
 				<section id="line"></section>
+
 				</main>
             </section>
-        </section>
+      
         <!-- Our Ride Section -->
         <section id="our_ride" class="contact-section">
             <div class="container">
+            <div id = "main_ride_box">
+<div class="pane">
+     <a href="{% static  "common/images/1.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img" src="{% static  "common/images/1.jpg" %}" ></a>
+      <a href="{% static  "common/images/2.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/2.jpg" %}"></a>
+       <a href="{% static  "common/images/3.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img" src="{% static  "common/images/3.jpg" %}"></a>
+        <a href="{% static  "common/images/4.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/4.jpg" %}"></a>
+
+   <a href="{% static  "common/images/5.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/5.jpg" %}"></a>
+ <a href="{% static  "common/images/6.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/6.jpg" %}"></a> 
+ <a href="{% static  "common/images/1.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/1.jpg" %}"></a> 
+ <a href="{% static  "common/images/2.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/2.jpg" %}"></a> 
+ <a href="{% static  "common/images/3.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/3.jpg" %}"></a> 
+ <a href="{% static  "common/images/4.jpg" %}" data-lightbox="roadtrip" class="item"> <img class = "ride-img"  src="{% static  "common/images/4.jpg" %}"></a>
+</div>
+<button class ="ride_button_class" id="leftb"><img class="button_img"   src="{% static  "common/images/left_arrow.png" %}"></button>
+<button class ="ride_button_class"  id="rightb"><img class="button_img"  src="{% static  "common/images/right_arrow.png" %}"></button>
+</div>
+
+  
                 
             </div>
         </section>
+
+
      
            <!-- Partners  Section -->
         <section id="partners" class="contact-section">
@@ -239,7 +266,7 @@
             </div>
         </div>
     </section>
-    </section>
+
 
             <div class="container">
             <center><h1>Contact Section</h1></center>
@@ -276,11 +303,11 @@
        
       </div>
                 </div>
+
             </div>
 
 
 
-        </section>
 
                 <!-- Footer -->
         <footer>
@@ -290,80 +317,43 @@
                 </div>
             </div>
         </footer>
-                    <!-- Crew  Section -->
-        <section id="crew" class="services-section">
-        <div class="container">
-<div id = "outer_box">
-    <div id ="disc_box"><button id ="click" onclick="myFunction()">click here</button>
-    fjkasdhflaksjdhfkasjbdfnaksjbckasjbndvsbdvs.bdkvzbv</div>
 
-<div id ="inner_box">
-            <div>faculty head</div>
-        <div class ="post" id =  "faculty_head" >
-            <img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/>
-            <div id ="faculty_disc">
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-        
-            </div>
-            <div id ="empty_div"> </div>
-        </div>
+        </section>
+           <script src="{% static 'common/js/jquery-2.2.1.min.js' %}"></script>
+           <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+               <script src="{% static 'common/js/jquery.js' %}"></script> 
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+                 <script src="{% static 'common/js/bootstrap.js' %}"></script>
+        <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'common/js/scrolling-nav.js' %}"></script>    
+  <script src=" {% static 'common/js/viewportchecker.js' %}"></script>
+          
 
-        <div id ="team_members" class ="post" >
-        
-        <div class="col-lg-4">
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
-                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            </div>
-                <div class="col-lg-4">
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
-                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            </div>
-                <div class="col-lg-4">
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
-                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            </div>
-                <div class="col-lg-4">
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
-                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
-            </div>
+ 
 
 
-</div>
+<script src="{% static 'common/js/lightbox.js' %}"></script>
 
-</div>
-<div id = "lower_box"></div>
+<script type="text/javascript">
 
+    $(function(){
+    $('.pane').css('width',$(window).width()+'px');
+    
+    $('#leftb').click(function(){
+        $('.pane').animate({scrollLeft : '+=300'});        
+    });
+    
+    $('#rightb').click(function(){
+        $('.pane').animate({scrollLeft : '-=300'});
+    });
+});
+</script>         
 
-</div>
-</div>
 <script>
     function myFunction(){
-        var button = document.getElementById("click");
-         var inner_height = parseInt(document.getElementById('inner_box').offsetHeight);
-     console.log(document.getElementById("lower_box").style.top = "0px");
+
+    document.getElementById("lower_box").style.top = "0px";
      jQuery(document).ready(function() {
     jQuery('.post').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
@@ -373,17 +363,7 @@
     }
 </script>
 
-        </section>
-          <script src="{% static 'common/js/jquery.js' %}"></script>
-      
-        <script src="{% static 'common/js/jquery-2.2.1.min.js' %}"></script>
-      
-        <script src="{% static 'common/js/bootstrap.js' %}"></script>
-        <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
-        <script src="{% static 'common/js/scrolling-nav.js' %}"></script>
-          <script src=" {% static 'common/js/viewportchecker.js' %}"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
 
     </body>
 </html>

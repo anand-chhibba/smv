@@ -312,3 +312,76 @@ body{
 #but:hover {
     transform: scale(1.2);
 }
+
+
+
+
+
+
+
+.pane {
+    margin-top:30px;
+    height:400px; 
+    width:400px; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space:nowrap;
+    position: relative;
+}
+
+.pane .item {
+    width:300px; 
+    height:100%; 
+    margin: 0 8px;
+    background:white;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:top;
+
+}
+
+
+img.button_img {
+    width: 250px;
+    height: 400px;
+}
+img.ride-img {
+    width: 308px;
+    height: 500px;
+}
+#leftb {
+    position: relative;
+    top: -399px;
+    
+}
+button#rightb {
+    position: absolute;
+    left: 80%;
+       top: 2722px;
+}
+
+
+.ride_button_class{
+    position: absolute;
+    opacity: 0.6;
+    display: none;
+/* apply transision */
+
+}
+#main_ride_box:hover > #leftb{
+
+    display:block;
+    
+
+
+}
+#main_ride_box:hover > #rightb{
+
+    display:block;
+    
+
+
+}
+
+
