@@ -2,6 +2,89 @@ body{
 	background-color: 'red';
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                    PAGE LOADER
+* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+            #loader {
+position: absolute;
+    left: 50%;
+    top: 35%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    background-color: white;
+    display: flex;
+    align-self: center;
+    background: white;
+    border-top: 4px;
+    border-style: solid;
+    border-color: green;
+    justify-content: space-around;
+    line-height: 101px;
+    border: 4px solid white;
+    border-top-color: back;
+    border-color: aqua;
+    border-top-color: black;
+    margin: -75px 0 0 -75px;
+    animation: spin 1s linear infinite
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#starting_logo{
+     -webkit-animation: antispin 1s linear infinite;
+  animation: antispin 1s linear infinite; 
+}
+#starting_img {
+    width: 235px;
+    height: 235px;
+    border-radius: 120px;
+    position: absolute;
+    left: -117px;
+    top: -21px;
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes antispin {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes antispin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#myDiv {
+  display: none;
+
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
                     SOCIAL LINK SECTION
@@ -320,7 +403,7 @@ body{
 
 
 .pane {
-        position: relative;
+     
     margin-top:30px;
     height:400px; 
     width:400px; 
@@ -343,34 +426,27 @@ body{
 
 div#main_ride_box {
     position: relative;
+        left: -11px;
 }
 
 img.button_img {
-    width: 250px;
+    width: 180px;
     height: 400px;
+    padding: 1px;
 }
-img.ride-img {
-    width: 308px;
-    height: 500px;
-}
+
 button#leftb {
     position: absolute;
-    top: -3px;
+  
 }
 button#rightb {
     position: absolute;
-    top: 14px;
-    left: 86%;
+
+    left: 87%;
 }
 
 
-.ride_button_class{
-  
-    opacity: 0.6;
-    display: none;
-/* apply transision */
 
-}
 #main_ride_box:hover > #leftb{
 
     display:block;
@@ -385,5 +461,36 @@ button#rightb {
 
 
 }
+.ride_button_class{
+  
+    opacity: 0.6;
+    display: none;
+        padding: 1px;
+/* apply transision */
+    top: -1px;
 
-
+}
+#About img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 6px solid rgba(128,128,128,0.24);
+    padding: 0px;
+}
+img.ride-img {
+    width: 308px;
+    height: 399px;
+    padding: 0px;
+    border: black;
+    border-style: groove;
+    border-radius: 4px;
+}
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    border: 4px solid white;
+    padding: 0;
+}
