@@ -27,30 +27,16 @@
         height: 400px;
         background-color: grey;
       }
-img.slide_img {
-    width: 100%;
-    position: relative;
-    top: -67px;
-}
-.navbar-brand>img {
-    display: block;
-    height: 90px;
-    border-radius: 32px;
-    width: 168px;
-    border: black;
-    /* border-radius: 14px; */
-    border-de: initial;
-    border: black;
-    border: 2px;
-    border-style: solid;
-    padding: 0;
-}
+
+
  </style>
 
     </head>
 
 
-    <body>
+       <body onload="myFunction()"  class= "yo">
+<div id ="loader"> <div id ="starting_logo"><img id = "starting_img" src="{% static  "common/images/SMV-Logo" %}" alt="My image"/></div> </div>
+<div id="myDiv" class="animate-bottom" >
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
@@ -311,9 +297,7 @@ img.slide_img {
         });
       }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5uoryxTrl5Oz5A9uiUqhS6ciJH-so604&callback=initMap">
-    </script>
+   
                     </div>
 
                       <!-- CONTACT INFO -->
@@ -389,7 +373,7 @@ img.slide_img {
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 2000);
+    myVar = setTimeout(showPage,1000);
 }
 
 function showPage() {
@@ -397,7 +381,10 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 </script> 
-
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5uoryxTrl5Oz5A9uiUqhS6ciJH-so604&callback=initMap">
+    </script>
+</div>
     </body>
   
 </html>

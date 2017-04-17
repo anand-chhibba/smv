@@ -2,6 +2,7 @@ body{
 	background-color: 'red';
 }
 
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
                     PAGE LOADER
 * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -494,3 +495,22 @@ img.ride-img {
     border: 4px solid white;
     padding: 0;
 }
+img.slide_img {
+    width: 100%;
+    position: relative;
+    top: -67px;
+}
+.navbar-brand>img {
+    display: block;
+    height: 90px;
+    border-radius: 32px;
+    width: 168px;
+    border: black;
+    /* border-radius: 14px; */
+    border-de: initial;
+    border: black;
+    border: 2px;
+    border-style: solid;
+    padding: 0;
+}
+
