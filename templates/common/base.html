@@ -25,9 +25,15 @@
         height: 400px;
         background-color: grey;
       }
-    </style>
+
+
+ </style>
 
     </head>
+    <body onload="myFunction()" >
+<div id ="loader"> <div id ="starting_logo"><img id = "starting_img" src="{% static  "common/images/SMV-Logo" %}" alt="My image"/></div> </div>
+<div id="myDiv" class="animate-bottom" >
+
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -67,7 +73,7 @@
                         <li>
                             <a class="page-scroll" href="#contact">Contact</a>
                         </li>
-                    <ul>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -171,6 +177,7 @@
 				    <div id="gol-hide"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
 				    <div id="empty"></div>
 				</div>
+
 				<div id="id4">
 				    <div id="content">
 				        <h4>FEBRUARY 2014 <br> Our Triumph </h4>
@@ -184,6 +191,7 @@
 				<section id="line"></section>
 
 				</main>
+            </section>
             </section>
       
         <!-- Our Ride Section -->
@@ -363,7 +371,19 @@
     }
 </script>
 
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script> 
 
     </body>
+    </div>
 </html>
