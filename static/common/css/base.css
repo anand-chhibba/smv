@@ -518,9 +518,9 @@ img.partner_inner_img {
     height: 76%;
         padding-bottom: 10px;
 }
-.partners_img{
+.partner_inner_img{
     transition: all  ease-in-out 0.4s;
 }
-.partners_img:hover {
+.partner_inner_img:hover {
     transform: scale(1.3);
 }
