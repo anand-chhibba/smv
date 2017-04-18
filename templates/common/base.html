@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
+                       
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -135,7 +135,53 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>About Section</h1>
-   
+                        up vote
+195
+down vote
+For an easy revert if it's just a mistake (perhaps you forked a repo, then ended up pushing to the original instead of to a new one) here's another possibility:
+
+git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
+Obviously swap in that number for the number of the commit you want to return to.
+
+Everything since then will be deleted once you push again. To do that, the next step would be:
+
+git push --force
+shareimprove this answer
+up vote
+195
+down vote
+For an easy revert if it's just a mistake (perhaps you forked a repo, then ended up pushing to the original instead of to a new one) here's another possibility:
+
+git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
+Obviously swap in that number for the number of the commit you want to return to.
+
+Everything since then will be deleted once you push again. To do that, the next step would be:
+
+git push --force
+shareimprove this answer
+up vote
+195
+down vote
+For an easy revert if it's just a mistake (perhaps you forked a repo, then ended up pushing to the original instead of to a new one) here's another possibility:
+
+git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
+Obviously swap in that number for the number of the commit you want to return to.
+
+Everything since then will be deleted once you push again. To do that, the next step would be:
+
+git push --force
+shareimprove this answerup vote
+195
+down vote
+For an easy revert if it's just a mistake (perhaps you forked a repo, then ended up pushing to the original instead of to a new one) here's another possibility:
+
+git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
+Obviously swap in that number for the number of the commit you want to return to.
+
+Everything since then will be deleted once you push again. To do that, the next step would be:
+
+git push --force
+shareimprove this answer
                     </div>
                 </div>
             </div>
@@ -228,6 +274,7 @@
                 <div class="row">
                     <div class="col-lg-12" id="sponsers-container">
                         <center><h1 id ="sponsers-heading">Partners</h1></center>
+                        <div id ="partners_wrapper">
                         <div class="row" class="post">
                           <div class="col-sm-3 partners_img logo-div">
                             <p> <a href=""><img class="partner_inner_img" src="{% static  'common/images/logo.png' %}" alt="My image"/></a></p>
@@ -281,6 +328,7 @@
                             <p><a href=""><img class="partner_inner_img" src="{% static  'common/images/logo.png' %}" alt="My image"/></a></p>
                             <h3 class ="logo_heading">logo</h3>
                           </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -436,7 +484,13 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 </script> 
-
+<script>
+    $(document).ready(function () {
+              $(".navbar-toggle").on("click", function () {
+                    $(this).toggleClass("active");
+              });
+        });
+</script>
 </div>
     </body>
   

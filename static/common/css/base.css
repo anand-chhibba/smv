@@ -3,6 +3,7 @@ body{
 }
 
 
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * 
                     PAGE LOADER
 * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -523,4 +524,64 @@ img.partner_inner_img {
 }
 .partner_inner_img:hover {
     transform: scale(1.3);
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+    img.partner_inner_img {
+  
+
+
+
+    height: 35%;
+    padding-bottom: 10px;
+}
+.navbar-toggle .icon-bar:nth-of-type(2) {
+      top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+      position: relative;
+      transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+      top: 6px;
+      transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+      background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+      top: -6px;
+      transform: rotate(-45deg);
+}
+
+    .navbar-collapse.navbar-ex1-collapse.collapse{
+        padding-top: 34px;
+    }
+
+
+    div#partners_wrapper {
+    display: inline-flex;
+}
+
+
+div#partners_wrapper {
+    display: inline-flex;
+}
+
+
+
+
+
 }
