@@ -47,46 +47,19 @@ body {
         justify-content: space-around;
 }
 
-	#outer_box{
-		background-color: green;
-	width:100%;
-	z-index: 1;
-	height: 700px;
-	margin: 0px;
-
-	}
-		#disc_box{
-		background-color:blue;
-	width:100%;
-	height: 400px;
-	z-index: 1;
-
-	}
+	
 	#inner_box{
-		background-color: red;
 	height: 800px;
 	width: 100%;
 	z-index: 1;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-color: #fff;
 
 	}
 
-	#lower_box{
-	background-color: yellow;
-	height: 1100px;
-	width: 100%;
-	z-index: 1;
-	position: relative;
-	top: -1100px;
-	transition: 1.2s ease-out;
 
-
-	}
-	img{
-		padding: 20px;
-	}
 	.container{
 		width: 100%;
 		margin:0px; 
