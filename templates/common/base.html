@@ -13,13 +13,10 @@
         <link href="{% static 'common/css/scrolling-nav.css' %}" rel="stylesheet">
         <link href="{% static 'common/css/full-slider.css' %}" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
-                   <link href= "{% static 'common/css/animate.css' %}"  rel="stylesheet" >
-       
-        
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{% static 'common/css/bootstrap-lightbox.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'common/css/lightbox.css' %}" >
-         <link  href= "{% static 'common/css/demo.css' %}" rel="stylesheet" >
+    <link href="{% static 'common/css/aos.css' %}" rel="stylesheet">
              <link href="{% static 'common/css/base.css' %}" rel="stylesheet">
     <style>
        #map {
@@ -27,14 +24,14 @@
         height: 400px;
         background-color: grey;
       }
-
-
+   
  </style>
 
     </head>
 
 
-       <body onload="myFunction()"  class= "yo">
+       <body onload="myFunction()" >
+
 <div id ="loader"> <div id ="starting_logo"><img id = "starting_img" src="{% static  "common/images/SMV-Logo" %}" alt="My image"/></div> </div>
 <div id="myDiv" class="animate-bottom" >
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -181,54 +178,54 @@ shareimprove this answer
 
        <!--Achievemnets Section -->
         <section id="achievements" class="services-section">
-			<section id="About">
-				<header>
-				 <h1>Achievments</h1>
-				<p>Nasrum Minnallahi Wafatahun Qareeb.</p>
-				</header>
-				<main>
-				<div id="id1">
-				    <div id="content">
-				        <h4>JUNE 2010</h4>
-				        <h4>Our Humble Beginnings</h4>
-				        <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
-				    </div>
-				    <div id="gol-img"><a href="#id1"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
-				    <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg"  %}"></a></div>
-				    <div id="empty"></div>
-				</div>
-				<div id="id2">
-				    <div id="content">
-				        <h4>JANUARY 2011 <br> Facing Startup Battles </h4>
-				        <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
-				    </div>
-				    <div id="gol-img"><a href="#id2"><img src="{% static  "common/images/about-us-2.jpg" %}" alt="My image"/></a></div>
-				    <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
-				    <div id="empty"></div>
-				</div>
-				<div id="id3">
-				    <div id="content">
-				        <h4>DECEMBER 2012 <br> Enter The Dark Days</h4>
-				        <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
-				    </div>
-				    <div id="gol-img"><a href="#id3"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
-				    <div id="gol-hide"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
-				    <div id="empty"></div>
-				</div>
+      <section id="About">
+        <header>
+         <h1>Achievments</h1>
+        <p>Nasrum Minnallahi Wafatahun Qareeb.</p>
+        </header>
+        <main>
+        <div id="id1">
+            <div id="content">
+                <h4>JUNE 2010</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+            </div>
+            <div id="gol-img"><a href="#id1"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
+            <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg"  %}"></a></div>
+            <div id="empty"></div>
+        </div>
+        <div id="id2">
+            <div id="content">
+                <h4>JANUARY 2011 <br> Facing Startup Battles </h4>
+                <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+            </div>
+            <div id="gol-img"><a href="#id2"><img src="{% static  "common/images/about-us-2.jpg" %}" alt="My image"/></a></div>
+            <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-1.jpg" %}" alt="My image"/></a></div>
+            <div id="empty"></div>
+        </div>
+        <div id="id3">
+            <div id="content">
+                <h4>DECEMBER 2012 <br> Enter The Dark Days</h4>
+                <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+            </div>
+            <div id="gol-img"><a href="#id3"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+            <div id="gol-hide"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+            <div id="empty"></div>
+        </div>
 
-				<div id="id4">
-				    <div id="content">
-				        <h4>FEBRUARY 2014 <br> Our Triumph </h4>
-				        <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
-				    </div>
-				    <div id="gol-img"><a href="#id4"><img src="{% static  "common/images/about-us-4.jpg" %}" alt="My image"/></a></div>
-				    <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
-				    <div id="empty"></div>
-				</div>
-				 <div ><button id ="but">OUR <br>STORY<br> CONTINUES <br> ...</button></div>
-				<section id="line"></section>
+        <div id="id4">
+            <div id="content">
+                <h4>FEBRUARY 2014 <br> Our Triumph </h4>
+                <p>Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat Proin iaculis purus consequat.</p>
+            </div>
+            <div id="gol-img"><a href="#id4"><img src="{% static  "common/images/about-us-4.jpg" %}" alt="My image"/></a></div>
+            <div id="gol-hide"><a href="#id"><img src="{% static  "common/images/about-us-3.jpg" %}" alt="My image"/></a></div>
+            <div id="empty"></div>
+        </div>
+         <div ><button id ="but">OUR <br>STORY<br> CONTINUES <br> ...</button></div>
+        <section id="line"></section>
 
-				</main>
+        </main>
             </section>
             </section>
       
@@ -260,11 +257,85 @@ shareimprove this answer
             </div>
         </section>
         
+    <!-- Our Crew Section -->
+    <div id ="crew"> <p> .</p>
+    <p>. </p>
+    </div>
+  
+   <h1 ><center>Crew</center></h1>
+    <div id ="complete_wrapper">
+  
+  <div class="col-lg-1"></div>
+    <div  class="col-lg-7">For an easy revert if it's just a mistake (perhaps you forked a repo, then ended up pushing to the original instead of to a new one) here's another possibility:
+
+git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
+Obviously swap in that number for the number of the commit you want to return to.
+
+Everything since then will be deleted once you push again. To do that, the next step would be:</div>
+  
+    <div id ="button_wala" class="col-lg-4" onclick="myFunction3()" >
+<a  class="push_button red">Our Esteem Team</a>
+
+    </div>
+    <div id = "our_crew"> 
+
+               <h3><center>Faculty-Head</center></h3>
+        <div class ="post" id =  "faculty_head" >
+        <div class="aos-item" aos="fade-up"  id ="img_div_faculty">
+        
+            <img class="col-lg-8" id ="faculty_pic " src="{% static  "common/images/2.jpg" %}" alt="My image"/>
+            </div>
+            <div  id ="faculty_disc" class="col-lg-4" >
+            <div></div>
+            <div class ="faculty_info_1"><h3><strong>Dr. Ravinderjit Singh Walia</strong></h3></div>
+            <div class ="faculty_info_1"><h4><u>Associate Professor</u></h4></div>
+            <div class ="faculty_info_1"><h4><u>Mechanical Department</u></h4></div>
+            <div class ="faculty_info_1"><h4><u>Delhi Technological University</u></h4></div>
+        
+            </div>
+           
+        </div>
+                 <h3><center>Student-Members</center></h3> 
+            <div id ="members">
+
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+           
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+           
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+         
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh</div>
+                        <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+            <div class ="faculty_info">Dr. Ravinderjit Singh Walia</div>
+</div>
 
 
+
+ <div id ="crew_wrapper">
 
      
-       <section id="partners" class="services-section">
+       <section id="partners" class="services-section aos-item" aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12" id="sponsers-container">
@@ -428,12 +499,12 @@ shareimprove this answer
         <script src="{% static 'common/js/bootstrap.min.js' %}"></script>
         <script src="{% static 'common/js/jquery.easing.min.js' %}"></script>
         <script src="{% static 'common/js/scrolling-nav.js' %}"></script>    
-  <script src=" {% static 'common/js/viewportchecker.js' %}"></script>
+
           
 
  
 
-
+<script src="{% static 'common/js/aos.js' %}"></script>
 <script src="{% static 'common/js/lightbox.js' %}"></script>
 
 <script type="text/javascript">
@@ -452,16 +523,14 @@ shareimprove this answer
 </script>         
 
 <script>
-    function myFunction(){
 
-    document.getElementById("lower_box").style.top = "0px";
-     jQuery(document).ready(function() {
-    jQuery('.post').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-        offset: 100    
-       });   
-});        
+    function myFunction3(){
+
+    document.getElementById("crew_wrapper").style.top = '101%';
+
+       
     }
+    
 </script>
 
 <script>
@@ -484,6 +553,9 @@ function showPage() {
         });
 </script>
 </div>
+</div>
+
+
     </body>
   
 </html>
