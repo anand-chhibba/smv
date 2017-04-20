@@ -262,7 +262,7 @@ shareimprove this answer
     <p>. </p>
     </div>
   
-   <h1 ><center>Crew</center></h1>
+   <h1 id ="crew_heading"><center>Crew</center></h1>
     <div id ="complete_wrapper">
   
   <div class="col-lg-1"></div>
@@ -336,7 +336,7 @@ Everything since then will be deleted once you push again. To do that, the next 
  <div id ="crew_wrapper">
 
      
-       <section id="partners" class="services-section aos-item" aos="fade-up">
+       <section id="partners" class="services-section aos-item partners" aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12" id="sponsers-container">
@@ -447,7 +447,7 @@ Everything since then will be deleted once you push again. To do that, the next 
 
             <div class="container">
             <center><h1> </h1></center>
-                <div class="row">
+                <div class="row contacts ">
 
                     <div class="col-lg-6">
                <script async defer
@@ -551,11 +551,38 @@ function showPage() {
               $(".navbar-toggle").on("click", function () {
                     $(this).toggleClass("active");
               });
+              $(function(){
+   
+    $(document).on('scroll', function(){
+        // At top of page.
+        var distance = $('#about').offset().top;
+    
+        if ($(document).scrollTop() >= distance)
+        {
+            $('#car_logo').addClass('shadow');
+            $('.navbar-default').addClass('navcolor');
+            $('.navbar-default').removeClass('navbar-default');
+
+        }
+        // Not at top of page.
+        else
+        {
+            $('#car_logo').removeClass('shadow');    
+            $('.navbar').addClass('navbar-default');
+            $('.navbar').removeClass('navcolor');
+
+        }
+    });
+
+});
         });
 </script>
 </div>
 </div>
 
+<script>
+    
+</script>
 
     </body>
   
