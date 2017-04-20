@@ -45,32 +45,32 @@ body{
 }
 
 .red {
-    text-shadow:-1px -1px 0 #A84155;
-    background: #D25068;
-    border:1px solid #D25068;
+    text-shadow:-1px -1px 0  #20B2AA;
+    background:  #20B2AA;
+    border:1px solid  #02948C;
     
-    background-image:-webkit-linear-gradient(top, #F66C7B, #D25068);
-    background-image:-moz-linear-gradient(top, #F66C7B, #D25068);
-    background-image:-ms-linear-gradient(top, #F66C7B, #D25068);
-    background-image:-o-linear-gradient(top, #F66C7B, #D25068);
-    background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+    background-image:-webkit-linear-gradient(top,  #20B2AA,  #20B2AA);
+    background-image:-moz-linear-gradient(top,  #20B2AA, #20B2AA);
+    background-image:-ms-linear-gradient(top,  #20B2AA,  #20B2AA);
+    background-image:-o-linear-gradient(top,  #20B2AA, #20B2AA);
+    background-image:linear-gradient(to bottom,  #20B2AA, #20B2AA);
     
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
     
-    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
-    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
-    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0   #05978f, 0 4px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0   #05978f, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0   #05978f, 0 4px 2px rgba(0, 0, 0, .5);
 }
 
 .red:hover {
-    background: #F66C7B;
-    background-image:-webkit-linear-gradient(top, #D25068, #F66C7B);
-    background-image:-moz-linear-gradient(top, #D25068, #F66C7B);
-    background-image:-ms-linear-gradient(top, #D25068, #F66C7B);
-    background-image:-o-linear-gradient(top, #D25068, #F66C7B);
-    background-image:linear-gradient(top, #D25068, #F66C7B);
+    background: #20B2AA;
+    background-image:-webkit-linear-gradient(top, #20B2AA,  #20B2AA);
+    background-image:-moz-linear-gradient(top,#20B2AA,  #20B2AA);
+    background-image:-ms-linear-gradient(top,#20B2AA,  #20B2AA);
+    background-image:-o-linear-gradient(top,#20B2AA,  #20B2AA);
+    background-image:linear-gradient(top, #20B2AA,  #20B2AA);
 }
 
 
@@ -683,11 +683,14 @@ position: absolute;
     position: absolute;
     width: 100%;
 
-   top: 15%;
+     top: 16.5%;
       transition: 1.2s ease-in-out;
           box-shadow: 0px -6px 5px #888888;
 }
-
+div#empty_crew_div {
+    box-shadow: 0px 6px 5px #888888;
+    width: 100%;
+}
 
 
 div#members {
@@ -723,17 +726,23 @@ div#img_div_faculty {
 #button_wala{
   height: 200px;
 }
+
+
+a:focus, a:hover {
+    color: black;
+    text-decoration:none; ; 
+}
+
 div#crew {
     /* padding: 10px; */
-     margin-top: 7%;
+     margin-top: 2%;
 }
 
 
 
-
-
-
-
+#about_top_heading{
+	margin-bottom: 30px;
+}
 
 
 
