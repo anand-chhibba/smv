@@ -1,8 +1,6 @@
 body{
 	background-color: 'red';
 }
-
-
 .push_button {
     position: relative;
     width:220px;
@@ -763,6 +761,7 @@ div#crew {
     background-color: transparent;
     border-color: #e7e7e7;
     transition: background-color 1s;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
 }
 .navbar-default .navbar-nav>li>a {
     color:black;
@@ -772,6 +771,12 @@ div#crew {
 a.page-scroll.nav_button {
     color: black;
 }
+
+
+section#achievements {
+    background-color: #fff;
+}
+
 
 
 @media screen and (max-width: 767px){
@@ -827,10 +832,5 @@ div#partners_wrapper {
 
 
 }
-
-section#achievements {
-    background-color: #fff;
-}
-
 
 
